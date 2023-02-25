@@ -62,9 +62,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   * Author: suia media
   * License: 
   ======================================================== -->
+  <style>
+		/* Style for the floating button */
+		.float-button {
+			position: fixed;
+			above: 20px;
+			right: 20px;
+			z-index: 99;
+		}
+		
+		/* Style for the moving image */
+		.move-img {
+			animation: move 2s infinite;
+		}
+		
+		/* Animation for the moving image */
+		@keyframes move {
+			0% {
+				transform: translateY(-10px);
+			}
+			50% {
+				transform: translateY(10px);
+			}
+			100% {
+				transform: translateY(-10px);
+			}
+		}
+	</style>
 </head>
 
 <body>
+  <a href="#" class="float-button">
+		<img src="pop.png" alt="Floating Image Button" class="move-img">
+	</a>
   
   <!-- Google Tag Manager (noscript) -->
 
